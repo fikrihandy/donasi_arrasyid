@@ -1,6 +1,6 @@
 # Donasi Ar-Rasyid
 
-Aplikasi penggalangan donasi untuk nonprofit organization. Versi aplikasi Android dari website
+Aplikasi penggalangan donasi. Versi mobile app dari website
 [Donasi Ponpes Ar-Rasyid](https://donasi.arrasyid.ponpes.id/).
 
 ## About
