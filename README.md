@@ -1,6 +1,6 @@
 # donasi_arrasyid
 
-Aplikasi membantu kegiatan penggalangan donasi Pondok Pesantren Ar-Rasyid Wonogiri.
+Aplikasi pertama dengan Flutter
 
 ## Getting Started
 
