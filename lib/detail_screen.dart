@@ -17,7 +17,7 @@ class DetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<DetailScreen> {
   double persen() {
-    return widget.data.donasiTerkumpul / widget.data.targetDonasi;
+    return widget.data.collectedDonation / widget.data.target;
   }
 
   @override
@@ -25,7 +25,7 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       appBar: AppBar(
           title: const Text(
-            'Donasi Sekarang',
+            'Donasi Sekarang!',
           ),
           centerTitle: true),
       body: SafeArea(
@@ -78,7 +78,7 @@ ${(persen() * 100).round()}%
                 height: 50,
                 child: Center(
                     child: Text(
-                  widget.data.judul,
+                  widget.data.title,
                   style: const TextStyle(
                       fontSize: 20, fontWeight: FontWeight.bold),
                 )),
@@ -98,7 +98,7 @@ ${(persen() * 100).round()}%
                 height: 5,
               ),
               Text(
-                  '${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(widget.data.donasiTerkumpul)} // ${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(widget.data.targetDonasi)}',
+                  '${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(widget.data.collectedDonation)} // ${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(widget.data.target)}',
                   style: const TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 width: double.infinity,
@@ -124,7 +124,7 @@ ${(persen() * 100).round()}%
                               String nameForURL =
                                   userName.firstName.replaceAll(' ', '%20');
                               String titleForURL =
-                                  widget.data.judul.replaceAll(' ', '%20');
+                                  widget.data.title.replaceAll(' ', '%20');
                               String _url =
                                   'https://api.whatsapp.com/send?phone=6289692703057&text=_Assalamualaikum%20warahmatullahi%20wabarakatuh_%2C%0D%0A--------%0D%0ANama%20%3A%20%2A$nameForURL%2A%0D%0ADonasi%20%3A%20%2A$titleForURL%2A%0D%0APesan%2FDoa%20%3A%20';
                               if (!await launch(_url)) {
