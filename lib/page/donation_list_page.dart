@@ -4,14 +4,9 @@ import 'package:donasi_arrasyid/detail_screen.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-class DonationListPage extends StatefulWidget {
+class DonationListPage extends StatelessWidget {
   const DonationListPage({Key? key}) : super(key: key);
 
-  @override
-  State<DonationListPage> createState() => _DonationListPageState();
-}
-
-class _DonationListPageState extends State<DonationListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +38,7 @@ class _DonationListPageState extends State<DonationListPage> {
                       child: Column(
                         children: [
                           Text(
-                            ' ' + data.judul + ' ',
+                            ' ' + data.title + ' ',
                             style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -52,7 +47,7 @@ class _DonationListPageState extends State<DonationListPage> {
                           ),
                           const SizedBox(height: 8.0),
                           Text(
-                            ' Terkumpul = ${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(data.donasiTerkumpul)} ',
+                            ' Terkumpul = ${NumberFormat.currency(locale: 'id', symbol: 'Rp.', decimalDigits: 0).format(data.collectedDonation)} ',
                             style:
                                 const TextStyle(backgroundColor: Colors.white),
                           ),
@@ -60,7 +55,7 @@ class _DonationListPageState extends State<DonationListPage> {
                             height: 16.0,
                           ),
                           LinearPercentIndicator(
-                            percent: data.donasiTerkumpul / data.targetDonasi,
+                            percent: data.collectedDonation / data.target,
                             //width: 100,
                             progressColor: Colors.deepOrangeAccent,
                           )
