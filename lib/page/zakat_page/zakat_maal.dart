@@ -107,18 +107,19 @@ class _ZakatMaalState extends State<ZakatMaal> {
                   width: 170,
                   child: Center(
                     child: TextField(
-                        controller: _jumlahHutangTEC,
-                        keyboardType: TextInputType.number,
-                        inputFormatters: [
-                          FilteringTextInputFormatter.digitsOnly
-                        ],
-                        decoration: InputDecoration(
-                            prefixText: 'Rp. ',
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            label: const Center(
-                                child: Text('Hutang/cicilan (optional)',
-                                    textAlign: TextAlign.center)))),
+                      controller: _jumlahHutangTEC,
+                      keyboardType: TextInputType.number,
+                      inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                      decoration: InputDecoration(
+                        prefixText: 'Rp. ',
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        label: const Center(
+                          child: Text('Hutang/cicilan (optional)',
+                              textAlign: TextAlign.center),
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],
