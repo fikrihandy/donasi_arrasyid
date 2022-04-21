@@ -13,7 +13,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   late int index;
 
-  List showWidget = [
+  final List _showWidget = [
     const HomePage(),
     const DonationListPage(),
     const PersonPage()
@@ -46,6 +46,6 @@ class _MainScreenState extends State<MainScreen> {
                   icon: Icon(Icons.text_snippet_rounded), label: 'Donasi'),
               BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Akun')
             ]),
-        body: showWidget[index]);
+        body: _showWidget[index]);
   }
 }
