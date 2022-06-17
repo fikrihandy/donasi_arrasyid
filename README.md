@@ -6,4 +6,4 @@ Aplikasi penggalangan donasi. Versi mobile app dari website
 ## About
 
 Di-upload untuk memenuhi submission Proyek Akhir di kelas
-[Belajar Membuat Aplikasi Flutter untuk Pemula](https://www.dicoding.com/certificates/1RXYMNG03XVM)
+[Belajar Membuat Aplikasi Flutter untuk Pemula](https://www.dicoding.com/certificates/1RXYMNG03XVM).
