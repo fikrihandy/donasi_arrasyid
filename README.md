@@ -11,4 +11,4 @@ Di-upload untuk memenuhi submission Proyek Akhir di kelas
 ## Download APK
 
 v0.2.0-alpha
-[Download]([https://www.dicoding.com/certificates/1RXYMNG03XVM](https://github.com/fikrihandy/donasi_arrasyid/releases/download/v0.2.0-alpha/Donasi_Ar-Rasyid_v0.2.0-alpha.apk)).
+[Download](https://github.com/fikrihandy/donasi_arrasyid/releases/download/v0.2.0-alpha/Donasi_Ar-Rasyid_v0.2.0-alpha.apk).
