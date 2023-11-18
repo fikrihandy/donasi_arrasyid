@@ -57,12 +57,12 @@ class Location extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 45,
                   width: 370,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
+                    children: [
                       Text(
                           'Pondok Putra : Mantren, Gunungan, Manyaran, Wonogiri'),
                       Text(

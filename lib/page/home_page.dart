@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,7 +142,8 @@ Di Pondok Pesantren Ar-Rasyid, pengelolaan pendidikan dan pengajaran serta kegia
                     width: 100,
                     height: 25,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.purple),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.purple),
                       onPressed: () async {
                         String url = 'https://instagram.com/pondokarrasyid';
                         if (!await launchUrlString(
@@ -156,7 +158,8 @@ Di Pondok Pesantren Ar-Rasyid, pengelolaan pendidikan dan pengajaran serta kegia
                     width: 100,
                     height: 25,
                     child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.red),
+                      style:
+                          ElevatedButton.styleFrom(backgroundColor: Colors.red),
                       onPressed: () async {
                         String url = 'https://youtube.com/c/ArRasyidMedia';
                         if (!await launchUrlString(

@@ -15,7 +15,7 @@ class PenerimaanSantri extends StatelessWidget {
     return Scaffold(
       floatingActionButton: SpeedDial(
         label: const Text('Contact Person'),
-        icon: Icons.whatsapp_rounded,
+        icon: Icons.whatshot_outlined,
         backgroundColor: Colors.green,
         overlayColor: Colors.black,
         overlayOpacity: 0.5,
